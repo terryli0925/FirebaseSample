@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.terry.firebasesample.R;
+import com.terry.firebasesample.ui.fragment.AnalyticFragment;
 import com.terry.firebasesample.ui.fragment.AuthFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_auth) {
             replaceFragment(R.id.content_none, new AuthFragment());
+        } else if (id == R.id.nav_analytic) {
+            replaceFragment(R.id.content_none, new AnalyticFragment());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
